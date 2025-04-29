@@ -13,6 +13,6 @@ const pajaroPath = join(process.cwd(), 'pajaro.jpg');
 try{
     renameSync(birdPath, pajaroPath);
     console.log('File renamed to "pajaro.jpg" successfully.');
-} catch(err) {
+} catch (err) {
     console.error('error: ', err.message);
 }
