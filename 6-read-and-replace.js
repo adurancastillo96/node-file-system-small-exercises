@@ -7,8 +7,23 @@
  * @param {string} textToSearch Texto a buscar
  * @param {string} textToReplace Texto a reemplazar     
  */
+import { readFileSync, writeFileSync } from 'fs';
+import { join } from 'path';
 
 function replaceTextInFile(htmlFilePath, textToSearch, textToReplace) {
+    // Define htmlfilepath
+    const filePath = join(process.cwd(), htmlFilePath);
+
+    // Read the file synchronously
+    const content = readFileSync(filePath, 'utf-8');
+
+    // replaceAll method
+    const result = content.replaceAll(textToSearch, textToReplace);
+
+    // Write result
+    const filePathResult = join(process.cwd(), 'result.html');
+    writeFileSync(filePathResult, result, 'utf-8');
+    console.log('File "result.html" has been written okly.');
 
 }
 

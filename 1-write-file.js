@@ -15,7 +15,7 @@ writeFileSync(filePath, 'Hello World', 'utf-8');
 console.log('File "test.text" has been written okly.');
 
 //============================
-//To restart 4-remove-file.js
+//To restart 4-remove-file.js test
 //============================
 const filePathDelete = join(process.cwd(), 'borrame.txt');
 writeFileSync(filePathDelete, 'Para borrar', 'utf-8');
