@@ -1,0 +1,21 @@
+{
+  "name": "file-system-small-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "1-write-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adurancastillo96/node-file-system-small-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adurancastillo96/node-file-system-small-exercises/issues"
+  },
+  "homepage": "https://github.com/adurancastillo96/node-file-system-small-exercises#readme"
+}
